@@ -1,6 +1,7 @@
 <template>
   <view class="container">
     <text class="text text-color-primary">{{ message }}</text>
+    <image class="image" :source="require('./assets/icon.png')" />
     <button v-bind:title="button" v-bind:on-press="handleBtnPress"/>
   </view>
 </template>
@@ -22,7 +23,7 @@ export default {
 </script>
 
 <style>
-  .text {
+  .text, .image {
     margin-bottom: 15px;
   }
 
